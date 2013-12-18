@@ -2,7 +2,7 @@
  * First head first c program
  */
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -30,8 +30,16 @@ int main()
     {
 	val = atoi(card_name);
     }
+    if(val>=3 || val <= 6)
+    {
+	puts("Count has gone up");
+    }
+    else if(val>=10){
+	puts("Count has gone down");
+    }
     printf("The card value is: %i\n", val);
 
     return 0;
+}
 
     
